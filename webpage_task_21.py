@@ -15,15 +15,15 @@ print(driver.get_cookies())
 time.sleep(5)
 
 # entering the username 
-driver.find_element(By.ID, "user-name").send_keys("standard_user")
+driver.find_element(By.name, "user-name").send_keys("standard_user")
 time.sleep(3)
            
 # entering the password           )
-driver.find_element(By.ID, "password").send_keys("secret_sauce")
+driver.find_element(By.name, "password").send_keys("secret_sauce")
 time.sleep(3)
 
 # Clicking the login button
-driver.find_element(By.ID, "login-button").click()
+driver.find_element(By.name, "login-button").click()
 time.sleep(3)
 
 # Wait for the dashboard to load
