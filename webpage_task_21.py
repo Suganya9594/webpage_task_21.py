@@ -35,9 +35,9 @@ print(driver.get_cookies())
 time.sleep(5)
 
 # Perform logout
-driver.find_element(By.ID, "react-burger-menu-btn").click()
+driver.find_element(By.name, "react-burger-menu-btn").click()
 time.sleep(5)
-driver.find_element(By.ID, "logout_sidebar_link").click()
+driver.find_element(By.name, "logout_sidebar_link").click()
 
 # Wait for the logout to complete
 time.sleep(3)
